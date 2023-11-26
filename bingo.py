@@ -20,7 +20,7 @@ def new_board(seed):
 
     for row in range(5):
         for column in range(5):
-            if row is column and column is 2:
+            if row == 2 and column == 2:
                 this_board[row].append('⭐')#free space
                 continue
             index = random.randint(0, 23)
